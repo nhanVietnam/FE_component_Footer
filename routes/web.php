@@ -16,4 +16,5 @@ Router::group(['exceptionHandler' => \Demo\Handlers\CustomExceptionHandler::clas
 	});
 	// Web
 	Router::get('/', 'DefaultController@index')->setName('index');
+	Router::get('/footer', 'DefaultController@footer')->setName('footer');
 });

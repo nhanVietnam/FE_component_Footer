@@ -1,0 +1,1 @@
+<h1>This is how you create a view controller</h1><?php /**PATH /home/lethanhnhan/project/component-php/component-maker/sample/index.blade.php ENDPATH**/ ?>

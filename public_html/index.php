@@ -10,7 +10,7 @@ function publicPath(string $filename = ""){
     return __DIR__.'/'.$filename;
 }
 
-if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
+if (preg_match('/\.(?:png|jpg|jpeg|gif|svg)$/', $_SERVER["REQUEST_URI"])) {
     $mimeType = mime_content_type(publicPath($_SERVER["REQUEST_URI"]));
     header("Content-type: $mimeType");
     readfile(publicPath($_SERVER["REQUEST_URI"]));
